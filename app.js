@@ -2,8 +2,6 @@ import express from 'express';
 import { engine } from 'express-handlebars';
 import * as router from './routes/html-routes.js';
 const PORT = process.env.PORT || 8000;
-
-//express initialized
 const app = express();
 
 //handlebars initialized
@@ -13,7 +11,7 @@ app.set('view engine', 'handlebars');
 //sets 'public' folder as static directory
 app.use(express.static('public'));
 
-//router added
+//Handles url routes 
 app.use(router.route);
 
 //listening for server

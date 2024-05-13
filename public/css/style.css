@@ -1,0 +1,21 @@
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-dark {
+    background-color: rgba(25, 25, 25 , 1);
+}
+
+.bg-light {
+    background-color: rgba(255, 255, 255 ,1);
+}
+
+.txt-dark {
+    color: rgba(0, 0, 0, 1);
+}
+
+.txt-light {
+    color: rgba(255, 255, 255, 1);
+}
