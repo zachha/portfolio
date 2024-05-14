@@ -1,7 +1,7 @@
 import express from 'express';
-const router = express();
+const router = express.Router();
 
-let route = router.get('/', (req, res) => {
+router.get('/', (req, res) => {
     try {
         res.render("home");
     } catch (err) {
@@ -9,6 +9,30 @@ let route = router.get('/', (req, res) => {
     }
 });
 
-export { route };
+router.get('/projects', (req, res) => {
+    try {
+        res.render("home");
+    } catch (err) {
+        if (err) return res.status(500).send(err);
+    }
+});
+
+router.get('/about', (req, res) => {
+    try {
+        res.render("home");
+    } catch (err) {
+        if (err) return res.status(500).send(err);
+    }
+});
+
+router.get('/contact', (req, res) => {
+    try {
+        res.render("home");
+    } catch (err) {
+        if (err) return res.status(500).send(err);
+    }
+});
+
+export default router;
 
 

@@ -19,3 +19,11 @@
 .txt-light {
     color: rgba(255, 255, 255, 1);
 }
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(255, 255, 255, 1);
+}
