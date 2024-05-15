@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 router.get('/projects', (req, res) => {
     try {
-        res.render("home");
+        res.render("projects");
     } catch (err) {
         if (err) return res.status(500).send(err);
     }
@@ -19,7 +19,7 @@ router.get('/projects', (req, res) => {
 
 router.get('/about', (req, res) => {
     try {
-        res.render("home");
+        res.render("aboutme");
     } catch (err) {
         if (err) return res.status(500).send(err);
     }
@@ -27,7 +27,7 @@ router.get('/about', (req, res) => {
 
 router.get('/contact', (req, res) => {
     try {
-        res.render("home");
+        res.render("contact");
     } catch (err) {
         if (err) return res.status(500).send(err);
     }
