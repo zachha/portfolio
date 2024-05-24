@@ -15,16 +15,21 @@ html {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 60px;
     margin-top: 0;
 }
 
 a {
     text-decoration: none;
-}
-
-a:visited {
-    color: rgba(255, 255, 255, 1);
+    &:any-link {
+        color: rgba(255, 255, 255, 1);
+    }
+    &.social {
+        filter: invert(13%) sepia(49%) saturate(6870%) hue-rotate(340deg) brightness(97%) contrast(140%);
+        &:hover {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+        }
+    }
 }
 
 .home-text {
@@ -38,6 +43,10 @@ a:visited {
 
 .font-normal {
     font-weight: 400;
+}
+
+.font-heavy {
+    font-weight: 500;
 }
 
 .font-semibold {
@@ -54,6 +63,10 @@ a:visited {
 
 .font-18 {
     font-size: 18px;
+}
+
+.red {
+    color: red;
 }
 
 .flex {
@@ -126,6 +139,10 @@ a:visited {
     margin-right: auto;
 }
 
+.width-fill {
+    width: 100%;
+}
+
 .max-width {
     max-width: 62rem;
 }
@@ -163,4 +180,18 @@ a:visited {
     display: block;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.hline {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid #e5e5e523;
+}
+
+.about-pic {
+    width: 19rem;
+    height: 19rem;
+}
+
+.content-fit {
+    height: 80%;
 }
