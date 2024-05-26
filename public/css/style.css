@@ -25,6 +25,10 @@ a {
         color: rgba(255, 255, 255, 1);
     }
     &.social {
+        width: 2.2rem;
+        height: 2.51rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         filter: invert(13%) sepia(49%) saturate(6870%) hue-rotate(340deg) brightness(97%) contrast(140%);
         &:hover {
             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
@@ -71,6 +75,10 @@ a {
 
 .flex {
     display: flex;
+}
+
+.block {
+    display: block;
 }
 
 .flex-column {
@@ -174,22 +182,21 @@ a {
     margin: 1rem;
 }
 
-.social {
-    width: 2.2rem;
-    height: 2.2rem;
-    display: block;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
 .hline {
     padding-bottom: 0.5rem;
     border-bottom: 0.5px solid #e5e5e523;
 }
 
-.about-pic {
+.about-card {
     width: 19rem;
     height: 19rem;
+    margin: 4rem;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
 }
 
 .content-fit {
