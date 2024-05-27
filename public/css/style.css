@@ -73,6 +73,10 @@ a {
     color: red;
 }
 
+.grey {
+    color: #a3a3a3;
+}
+
 .flex {
     display: flex;
 }
@@ -147,6 +151,10 @@ a {
     margin-right: auto;
 }
 
+.no-margins {
+    margin: 0;
+}
+
 .width-fill {
     width: 100%;
 }
@@ -201,4 +209,8 @@ a {
 
 .content-fit {
     height: 80%;
+}
+
+.about-card-header {
+    margin-bottom: 0;
 }
