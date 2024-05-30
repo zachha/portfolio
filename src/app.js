@@ -1,6 +1,6 @@
 import express from 'express';
 import { engine } from 'express-handlebars';
-import router from  './routes/html-routes.js';
+import router from  '../routes/html-routes.js';
 const PORT = process.env.PORT || 8000;
 const app = express();
 
